@@ -1,0 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none !important;
+    font-family: 'Poppins', sans-serif;
+    list-style: none !important; 
+    text-decoration: none !important;
+}
