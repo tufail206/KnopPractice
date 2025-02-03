@@ -20,10 +20,11 @@ export const NavLinkStyled = styled(Box)(({ theme }) => ({
   marginBottom: 10,
   borderRadius: theme.shape.borderRadiusMedium,
   color: theme.palette.text.tertiary,
+  fontWeight: "800",
   textDecoration: "none",
   marginLeft: "-30px",
   position: "relative",
-overflow:"hidden",
+  overflow: "hidden",
   "&:hover": {
     backgroundColor: theme.palette.text.linkColor,
   },
@@ -31,7 +32,7 @@ overflow:"hidden",
     backgroundColor: theme.palette.text.linkColor,
     // Create the V-shape with ::after
     "&::after": {
-      content:`""` ,
+      content: `""`,
       position: "absolute",
       top: "50%",
       left: "0px", // Adjust the position of the V shape
