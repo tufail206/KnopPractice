@@ -1,6 +1,11 @@
+import TopNav from "../../components/TopNav/TopNav"
+
 const Faqs = () => {
   return (
-    <div>Faqs</div>
+    <>
+    <TopNav title="FAQs"/>
+    <div>FAQs Page</div>
+    </>
   )
 }
 

@@ -1,6 +1,11 @@
+import TopNav from "../../components/TopNav/TopNav"
+
 const Chat = () => {
   return (
-    <div>Chat</div>
+    <>
+    <TopNav title="Chat"/>
+    <p>Chat page</p>
+    </>
   )
 }
 

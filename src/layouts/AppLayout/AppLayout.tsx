@@ -7,16 +7,24 @@ const AppLayout = () => {
   return (
     <LayoutContainer>
       <LayoutWrapper>
-       <Sidebar/>
-       <Box sx={{display:"flex" ,gap:"10px", alignItems:"center",flexDirection:"column"}}>
-         <h1>header</h1>
-            <Outlet/>
-            <h1>footer</h1>
-      </Box>
-      </LayoutWrapper>     
-     
+        <Sidebar />
+        <Box
+          sx={{
+            width:"100%",
+            display: "flex",
+            gap: "10px",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+        >
+          <main style={{width:"100%"}}>
+            <Outlet />
+          </main>
+          <h1>footer</h1>
+        </Box>
+      </LayoutWrapper>
     </LayoutContainer>
-  )
+  );
 }
 
 export default AppLayout

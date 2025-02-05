@@ -1,7 +1,12 @@
+import TopNav from "../../components/TopNav/TopNav"
+
 const Maintenance = () => {
   return (
-    <div>Maintenance</div>
-  )
+    <>
+      <TopNav title="Maintenance" />
+      <p>Maintenance</p>
+    </>
+  );
 }
 
 export default Maintenance

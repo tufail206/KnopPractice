@@ -3,7 +3,7 @@ import {styled,Box} from '@mui/material'
 export const SidebarContainer=styled(Box)(({theme})=>({
     width: '235px',
     minHeight:"100vh",
-   padding:theme.spacing(2),
+   padding:theme.spacing(1),
 overflow: "hidden",
     backgroundColor: theme.palette.sidebarBg,
    borderRadius:theme.shape.borderRadiusLarge,

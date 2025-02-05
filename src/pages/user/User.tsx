@@ -1,7 +1,11 @@
+import TopNav from "../../components/TopNav/TopNav"
 
 const User = () => {
   return (
-    <div>User</div>
+    <div>
+       <TopNav title="User" />
+       <p>User Page</p>
+    </div>
   )
 }
 

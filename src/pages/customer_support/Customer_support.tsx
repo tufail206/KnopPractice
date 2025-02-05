@@ -1,9 +1,12 @@
+import TopNav from "../../components/TopNav/TopNav"
 
 const Customer_support = () => {
   return (
-    <p>
-         Customer_support</p>
-  )
+    <>
+      <TopNav title="Customer Support" />
+      <p> Customer_support</p>
+    </>
+  );
 }
 
 export default Customer_support

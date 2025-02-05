@@ -1,6 +1,11 @@
+import TopNav from "../../components/TopNav/TopNav"
+
 const Term_servcie = () => {
   return (
-    <div>Term_servcie</div>
+    <div>
+       <TopNav title="Terms and Services" />
+       <p>Term_servcie</p>
+    </div>
   )
 }
 

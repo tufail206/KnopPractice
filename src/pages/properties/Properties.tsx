@@ -1,6 +1,12 @@
+import TopNav from "../../components/TopNav/TopNav"
+
 const Properties = () => {
   return (
-    <div>Properties</div>
+    <>
+       <TopNav title="Properties" />
+
+       <p>property page</p>
+    </>
   )
 }
 

@@ -1,8 +1,12 @@
+import TopNav from "../../components/TopNav/TopNav"
 
 const Privacy_policy = () => {
   return (
-    <div>Privacy_policy</div>
-  )
+    <>
+      <TopNav title="Privacy_policy" />
+      <p> Privacy_policy page </p>
+    </>
+  );
 }
 
 export default Privacy_policy
