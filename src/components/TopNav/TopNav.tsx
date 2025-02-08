@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography ,Box} from "@mui/material";
+import { Typography } from "@mui/material";
 import { TopNavContainer, UserContainer } from "./styled";
 import NotificationsIcon from '@mui/icons-material/Notifications';
 export type titleType = {

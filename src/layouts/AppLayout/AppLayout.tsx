@@ -6,6 +6,7 @@ import { Sidebar } from "../Sidebar"
 const AppLayout = () => {
   return (
     <LayoutContainer>
+      
       <LayoutWrapper>
         <Sidebar />
         <Box
