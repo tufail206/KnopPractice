@@ -1,12 +1,22 @@
-import { Box,Link,List,ListItem, ListItemButton, ListItemText } from "@mui/material"
+import { Box,List, ListItemButton, ListItemText } from "@mui/material"
 import { NavLinkStyled, SidebarContainer } from "./styled"
 import logo from '../../assets/images/logo/logo.png'
 import { StyledTypography } from "../../components/Typography"
 import { NavLink } from "react-router-dom"
 import { menuItems } from "./MenuItems"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 const Sidebar = () => {
-  const [activeMenu,setActiveMenu] =useState<Number>(1)
+  const [activeMenu,setActiveMenu] =useState<Number>(0)
+   useEffect(() => {
+     const storedActiveMenu = localStorage.getItem("activeMenu");
+     if (storedActiveMenu) {
+       setActiveMenu(Number(storedActiveMenu));
+     }
+   }, []);
+    const handleMenuClick = (id: number) => {
+      setActiveMenu(id);
+      localStorage.setItem("activeMenu", id.toString()); // Save the active menu ID to localStorage
+    };
   return (
     <SidebarContainer>
       <Box
@@ -27,6 +37,7 @@ const Sidebar = () => {
         {menuItems.map((menuItem) => (
           <NavLink to={menuItem.link}>
             <NavLinkStyled
+              onClick={() => handleMenuClick(menuItem.id)}
               className={activeMenu === menuItem.id ? "active" : ""}
             >
               <ListItemButton

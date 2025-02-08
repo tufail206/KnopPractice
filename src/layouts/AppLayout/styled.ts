@@ -9,10 +9,10 @@ export const LayoutContainer = styled(Box)(({theme}) => ({
   },
 
 }))
-export const LayoutWrapper=styled(Box)(({theme}) => ({
+export const LayoutWrapper=styled(Box)({
     
     margin: '0 auto',
     display: 'flex',
     gap:"10px",
   
-}))
+})
