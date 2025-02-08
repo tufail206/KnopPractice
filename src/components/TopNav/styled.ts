@@ -8,7 +8,7 @@ export const UserContainer = styled(Box)(({ theme }) => ({
   alignItems: "center",
   padding: theme.spacing(1),
   zIndex: theme.zIndex.appBar + 1,
-  gap: "100px",
+  gap: "50px",
  " & .notification":{
 fontSize:"2.2rem",
    
