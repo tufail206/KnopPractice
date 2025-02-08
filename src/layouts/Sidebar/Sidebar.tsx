@@ -1,4 +1,4 @@
-import { Box,Link,List,ListItem, ListItemButton, ListItemText } from "@mui/material"
+import { Box,List, ListItemButton, ListItemText } from "@mui/material"
 import { NavLinkStyled, SidebarContainer } from "./styled"
 import logo from '../../assets/images/logo/logo.png'
 import { StyledTypography } from "../../components/Typography"

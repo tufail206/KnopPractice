@@ -1,2 +1,2 @@
-import Component from './forgotPassword'
+import Component from './ForgotPassword'
 export {Component}
